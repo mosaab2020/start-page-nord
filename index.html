@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mainContainer">
+        <form method="GET" action="https://www.google.com/search" id="searchForm">
+            <input type="text" placeholder="Search anything" autofocus="" name="as_q" id="searchBox">
+            <button type="submit" id="searchBtn"><img src="icons/google.svg" class="googleImg"><img src="icons/google-hover.svg" class="googleImg-hover"></button>
+        </form>
+
+        <div class="urlContainer">
+            <div class="urlContainerItem">
+                <p>Dev</p>
+                <a href="http://localhost:5500" class="urlLinks">Localhost1</a>
+                <a href="http://localhost:5501" class="urlLinks">Localhost2</a>
+                <a href="https://github.com/" class="urlLinks">Github</a>
+            </div>
+            <div class="urlContainerItem">
+                <p>Typing</p>
+                <a href="https://play.typeracer.com/" class="urlLinks">TypeRacer</a>
+                <a href="https://www.typing.com/student/lessons" class="urlLinks">Typing.com</a>
+            </div>
+            <div class="urlContainerItem">
+                <p>AI</p>
+                <a href="https://chatgpt.com/" class="urlLinks">ChatGPT</a>
+                <a href="https://www.phind.com/search?home=true" class="urlLinks">Phind AI</a>
+            </div>
+            <div class="urlContainerItem">
+                <p>Other</p>
+                <a href="https://mozhi.pussthecat.org/" class="urlLinks">Translate</a>
+                <a href="https://flathub.org/en" class="urlLinks">Flathub</a>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+@import url("nord.css");
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: var(--nord0);
+    background-image: url(background-images/background5.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2em;
+}
+
+/* form */
+.mainContainer form {
+    background-color: var(--nord0);
+    display: flex;
+    align-items: center;
+    border-radius: 0.5em;
+    opacity: 0.7;
+}
+
+/* form elements */
+.mainContainer form #searchBox {
+    background-color: var(--nord0);
+    color: var(--nord5);
+    border-radius: 0.5em;
+    border: none;
+    width: 250px;
+    padding: 10px;
+    outline: none;
+}
+
+.mainContainer form #searchBtn {
+    background-color: inherit;
+    border: 1px solid var(--nord0);
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    padding: 6px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 200ms;
+}
+
+.mainContainer form #searchBtn:hover .googleImg {
+    display: none;
+}
+
+.mainContainer form #searchBtn:hover .googleImg-hover {
+    display: inline;
+}
+
+.mainContainer form #searchBtn .googleImg {
+    width: 25px;
+}
+
+.mainContainer form #searchBtn .googleImg-hover {
+    display: none;
+    width: 25px;
+}
+
+/* urls */
+.mainContainer .urlContainer {
+    color: var(--nord5);
+    display: flex;
+    justify-content: center;
+    column-gap: 1em;
+    text-align: center;
+}
+
+.mainContainer .urlContainer .urlContainerItem {
+    background-color: var(--nord0);
+    border-radius: 0.5em;
+    width: 150px;
+    padding: 20px;
+    opacity: 0.7;
+}
+
+.mainContainer .urlContainer .urlLinks {
+    display: block;
+    color: var(--nord10);
+    text-decoration: none;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.mainContainer .urlContainer .urlLinks:hover {
+    text-decoration: underline;
+}
